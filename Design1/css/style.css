@@ -1,0 +1,27 @@
+body{
+    background-color: #FF7200;
+}
+.h{
+    background-color:white;
+}
+.nbar {
+text-decoration: none;
+width:1440px;
+height:99px;
+padding:30px;
+text-align:right;
+position: top right;
+}
+
+.intro1
+{
+    margin:100px;
+    height:300px;
+}
+
+.contact
+{
+    background-color: green;
+    padding:10px;
+    font-size: medium;
+}
