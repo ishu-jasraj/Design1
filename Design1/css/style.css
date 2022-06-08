@@ -1,27 +1,118 @@
+*{
+    box-sizing:border-box;
+}
+
 body{
-    background-color: #FF7200;
-}
-.h{
-    background-color:white;
-}
-.nbar {
-text-decoration: none;
-width:1440px;
-height:99px;
-padding:30px;
-text-align:right;
-position: top right;
+    background-color: #ff7200;
 }
 
-.intro1
-{
-    margin:100px;
-    height:300px;
+.nav2{
+    list-style-type:none;
 }
 
-.contact
+.nav-menu
 {
+    display:flex;
+position: absolute;
+width: 1440px;
+height: 99px;
+left: 0px;
+top: -2px;
+background-color:azure;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-content{
+display:inline;
+padding:60px;
+float:right;
+}
+
+.content-1{
+    position: absolute;
+width: 425px;
+height: 75px;
+left: 100px;
+top: 311.67px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 75px;
+color: #021718;
+}
+
+.content-2{
+position: absolute;
+width: 418px;
+height: 84px;
+left: 120px;
+top: 410.67px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 42px;
+}
+
+.contact-me{
     background-color: green;
-    padding:10px;
-    font-size: medium;
+    padding:10px 15px 10px 15px;
+    border-radius: 8px;
+    position: absolute;
+    text-align:center;
+    width:auto;
+    height: auto;
+    left: 120px;
+    top: 526.67px;
 }
+
+.insta{
+position: absolute;
+width: 55px;
+height: 55px;
+left: 120px;
+top: 600px;
+}
+
+.dribble{
+position: absolute;
+width: 55px;
+height: 55px;
+left: 250px;
+top: 600px;
+}
+
+.behance{
+position: absolute;
+width: 55px;
+height: 55px;
+left: 350px;
+top: 600px;
+}
+
+.girl{
+    position: absolute;
+width: 500px;
+height: 500px;
+left: 816px;
+top: 199.67px;
+
+filter: drop-shadow(0px 24px 48px rgba(0, 0, 0, 0.5));
+}
+/* .bg{
+    position: absolute;
+width: 500px;
+height: 500px;
+left: 793.33px;
+top: 224.62px;
+
+background: #44A1A0;
+transform: rotate(-5.47deg);
+} */
