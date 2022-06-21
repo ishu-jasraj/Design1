@@ -42,3 +42,16 @@ a:hover{
     font-family:inter;
     width:50%;
 }
+
+.c2{
+    width:50%;
+    margin-left:50px;
+}
+.c3{
+    margin-top:110px;
+    margin-left:50px;
+    margin-bottom:20px;
+}
+ .image{
+   float:right;
+} 

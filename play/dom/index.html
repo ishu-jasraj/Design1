@@ -23,8 +23,60 @@ console.log(test1,test2,test3,test4,test5,test6,test7);
 var test9=null;
 console.log(typeof test9);
 
-if('99'==99)
+if('true'==true)
 console.log('99 is converted to a strin now!!');
+
+var x;
+if(x)
+console.log('x is printed here..');
+
+//built in methods in string
+var s='XooxxO';
+s=s.trim();
+console.log(s);
+s=s.toUpperCase();
+console.log(s);
+s='XooxxO';
+
+for(var i=0;i<s.length;i++)
+{
+    if(s.charAt(i)=='X')
+    console.log('string started!!');
+    else if(s.charAt(i)=='O')
+    console.log('string ended!!');
+}
+
+//validate a phone number
+//number should be 7 digits, middle of number should contain a dash and range is from 0-9
+
+var phoneNumber='123-4567';
+function isPhoneNumber(num)
+{
+    if(num.length==7&&!isNaN(num))
+    return true;
+    if(num.length==8&&num.charAt(3)=='-')
+    {
+       for(var i=0;i<num.length;i++)
+       {
+        // if(!(num.charAt(i)>=0&&num.charAt(i)<=9))
+        if(isNaN(num.charAt(i))&&i!=3)
+        {
+        return false;
+       }
+       return true;
+    }
+    }
+    return 0;
+}
+
+if(isPhoneNumber(phoneNumber))
+{
+    console.log('you have entered a valid phone number!!');
+}
+else
+console.log('invalid phone number it is!!');
+
+
 </script>
     </head>
     <body>
