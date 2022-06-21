@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>document object model</title>
+       <script>
+        function init()
+{
+document.getElementById("two").innerHTML="oops we left javascript!!";
+}
+window.onload=init;
+var test1="ishu";
+var test2=2400;
+var test3=true;
+var test4={};
+var test5=[];
+var test6={
+    age:30
+};
+var test7=[123,"123"];
+
+console.log(test1,test2,test3,test4,test5,test6,test7);
+
+var test9=null;
+console.log(typeof test9);
+
+if('99'==99)
+console.log('99 is converted to a strin now!!');
+</script>
+    </head>
+    <body>
+        <h1>document object model</h1>
+        <p id="one">html stands for hyper text markup language</p>
+        <p id="two">css stands for cascading style sheet</p>
+    </body>
+</html>

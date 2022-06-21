@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>aut-o-matic</title>
+        <meta charset="utf-8">
+        <script>
+
+            var car=makeCar();
+            displayCar(car);
+
+            function makeCar()
+            {
+                var model=["hyundai","toyota","tesla","lamborghini","jaguar","bmv","mercedes"];
+                var year=[1960,2010,2020,1977,2001,1995];
+                var color=["red","black","white","grey"];
+                var automatic=[true,false];
+                var passengers=[2,4,6,8];
+
+                var modelGuess=Math.floor(Math.random()*model.length);
+                var yearGuess=Math.floor(Math.random()*year.length);
+                var colorGuess=Math.floor(Math.random()*color.length);
+                var automaticGuess=Math.floor(Math.random()*automatic.length);
+                var passengersGuess=Math.floor(Math.random()*passengers.length);
+
+                var newCar=`${model[modelGuess]} with ${color[colorGuess]} color, ${passengers[passengersGuess]} seater, year ${year[yearGuess]} ,automatic: ${automatic[automaticGuess]}`;
+
+                return newCar;
+            }
+
+            function displayCar(car)
+            {
+                alert(car);
+            }
+        </script>
+        <script src="code.js"></script>
+    </head>
+    <body></body>
+</html>
