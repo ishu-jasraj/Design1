@@ -1,0 +1,59 @@
+body{
+   background-color:black;
+}
+
+div#board{
+    background-image:url('file:///C:/Users/lenovo/Documents/GitHub/Design1/Battleship/images/board.jpg');
+    width:1024px;
+    height:863px;
+    background-repeat:no-repeat;
+    position:relative;
+    margin:auto;
+}
+
+.label
+{
+    color:white;
+}
+
+.coordinates
+{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+#fire-button{
+    font-weight:bold;
+}
+
+#message-area
+{
+    position:absolute;
+    top:0;
+    left:0;
+    color:green;
+    font-weight:bolder;
+    font-size:xx-large;
+    display:none;
+}
+
+table{
+    position:absolute;
+    top:98px;
+    left:173px;
+    border-collapse:collapse;
+}
+
+.hit{
+    background:url('file:///C:/Users/lenovo/Documents/GitHub/Design1/Battleship/images/ship.png') no-repeat center center;
+}
+
+.miss{
+    background:url('file:///C:/Users/lenovo/Documents/GitHub/Design1/Battleship/images/miss.png') no-repeat center center;
+}
+td{
+/* position:absolute; */
+width:94px;
+height:94px;    
+}
