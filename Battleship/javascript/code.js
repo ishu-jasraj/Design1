@@ -1,4 +1,5 @@
 var hits=0;
+var rank=0;
 var x=Math.floor(Math.random()*5);
 var y=Math.floor(Math.random()*7);
 var position1=x.toString()+y.toString();
@@ -12,6 +13,10 @@ var view=
 {
     displayMessage:function(message)
     {
+        // if(message=='You Sank my battleship😐')
+        if(hits==3)
+        document.getElementById('message-area').innerHTML=message+` with rank : ${rank}`;
+        else
         document.getElementById('message-area').innerHTML=message;
     }
 }
@@ -39,20 +44,25 @@ function checkCoordinates()
    var userInput=document.getElementById('guessInput').value;
    console.log(userInput);
    var convertedInput= convert(userInput)+userInput.substring(1);
+
+   rank++;
+
    if(convertedInput==position1||convertedInput==position2||convertedInput==position3)
    {
     hits++;
-    view.displayMessage('A Hit');
+    view.displayMessage('A Hit 😁');
     document.getElementById(convertedInput).style.background="url('file:///C:/Users/lenovo/Documents/GitHub/Design1/Battleship/images/ship.png') no-repeat center center";
-    document.getElementById(convertedInput).style.backgroundRepeat="no-repeat";   
+    // document.getElementById(convertedInput).style.backgroundRepeat="no-repeat";   
     }
    else
    {
-    view.displayMessage('A Miss');
+    view.displayMessage('You Missed 😒');
     document.getElementById(convertedInput).style.background="url('file:///C:/Users/lenovo/Documents/GitHub/Design1/Battleship/images/miss.png') no-repeat center center";
    }
 
    if(hits==3)
-   view.displayMessage('You Sank my battleship😐');
+   {
+    view.displayMessage('You Sank my battleship😐');
+   }
 }
 
