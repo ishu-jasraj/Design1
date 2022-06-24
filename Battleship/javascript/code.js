@@ -5,6 +5,21 @@ var y=Math.floor(Math.random()*7);
 var position1=x.toString()+y.toString();
 var position2=(x+1).toString()+y.toString();
 var position3=(x+2).toString()+y.toString();
+
+// var ships=[
+//     {
+//         location:['06','16','26'],
+//         hits:['','','']
+//     },
+//     {
+//         location:['24','34','44'],
+//         hits:['','','']
+//     },
+//     {
+//         location:['61','62','63'],
+//         hits:['','','']
+//     }
+// ]
 console.log(position1,position2,position3,typeof position1);
 document.getElementById('fire-button').addEventListener('click',checkCoordinates);
 //document.getElementById('fire-button').onclick=checkCoordinates;
@@ -44,6 +59,19 @@ function checkCoordinates()
    var userInput=document.getElementById('guessInput').value;
    console.log(userInput);
    var convertedInput= convert(userInput)+userInput.substring(1);
+
+//    for(var i=0;i<ships.length;i++)
+//    {
+//     var currShipLocation=ships[i].location;
+//     for(var j=0;j<currShipLocation.length;j++)
+//     {
+//         if(convertedInput==currShipLocation[j])
+//         {
+//             ships[i].hits[j]='hit';
+//             hitsCount++;
+//         }
+//     }
+//    }
 
    rank++;
 
