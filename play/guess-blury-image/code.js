@@ -19,3 +19,4 @@ function reblur(image)
     var name=image.id;
     image.src='images/'+name+'blur.jpg';
 }
+
