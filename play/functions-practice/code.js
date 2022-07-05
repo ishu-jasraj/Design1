@@ -147,3 +147,25 @@ var getSecret=function(){
 
 var secretnum=getSecret();
 secretnum();
+
+//creating constructors
+function Coffee(name,size)
+{
+    this.name=name;
+    this.size=size;
+    this.getSize=function(){
+        if(this.size<8)
+        console.log(this.size+' ounch is small');
+        else
+        console.log(this.size+' ounch is large');
+    }
+
+    this.description=function()
+    {
+        console.log(`I ordered ${this.name}, ${this.size} size coffee 😍`);
+    }
+var coffee1=new Coffee('capuccino',8);
+var coffee2=new Coffee('black herald',15);
+
+coffee1.description();
+coffee2.description();
